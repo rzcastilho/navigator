@@ -5,7 +5,31 @@
 }
 
 body {
-    font-family: ubuntu;
+    display: flex;
+    flex-direction: column;
+    font-family: syne mono;
+    height: 100vh;
+}
+
+header {
+    background-color: teal;
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1 0 auto; /* flex: flex-grow flex-shrink flex-basis|auto|initial|inherit; */
+}
+
+footer {
+    display: flex;
+    background-color: teal;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+footer a, footer p {
+    color: #fff;
 }
 
 a {
@@ -18,7 +42,6 @@ li {
 
 .navbar {
     display: flex;
-    background: teal;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
